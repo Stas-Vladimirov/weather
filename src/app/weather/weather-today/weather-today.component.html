@@ -1,0 +1,25 @@
+<div class="city-name">
+    <h1>{{weather.name}}</h1>
+</div>
+<div class="current-weather">
+    <div class="weather-forecast">
+        <h5>{{weather.weather[0].main}}</h5>
+        <img [src]="getIcon(weather.weather[0].icon)" />
+    </div>
+    <div class="temp">
+        <h2>{{weather.main.temp.toFixed()}}°C</h2>
+        <h4>Real feel {{weather.main.feels_like.toFixed()}}°C</h4>
+    </div>
+    <div class="wind">
+        <h4>Wind {{weather.wind.speed}} meter/sec</h4>
+    </div>
+    <div class="humidity">
+        <h4> Влажность {{weather.main.humidity}} %</h4>
+    </div>
+</div>
+
+
+
+
+
+
